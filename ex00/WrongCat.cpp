@@ -22,7 +22,7 @@ WrongCat::~WrongCat() {
     std::cout << "WrongCat Destructor has been called" << std::endl;
 }
 
-WrongCat::WrongCat(const WrongCat &WrongCatCopy) : Animal(WrongCatCopy) {
+WrongCat::WrongCat(const WrongCat &WrongCatCopy) : WrongAnimal(WrongCatCopy) {
 
     std::cout << "WrongCat copy assignator has been called" << std::endl;
 }
@@ -30,7 +30,7 @@ WrongCat::WrongCat(const WrongCat &WrongCatCopy) : Animal(WrongCatCopy) {
 WrongCat &WrongCat::operator=(const WrongCat &WrongCatCopy) {
     
     if (this != &WrongCatCopy)
-        Animal::operator=(WrongCatCopy);
+        WrongAnimal::operator=(WrongCatCopy);
     return *this;
 }
 

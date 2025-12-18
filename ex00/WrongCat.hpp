@@ -2,9 +2,9 @@
 #define WRONGCAT_HPP
 
 #include <iostream>
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-class WrongCat : public Animal {
+class WrongCat : public WrongAnimal {
 
     public :
         WrongCat();
