@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 14:12:24 by armosnie          #+#    #+#             */
-/*   Updated: 2025/12/18 14:12:52 by armosnie         ###   ########.fr       */
+/*   Updated: 2025/12/22 17:05:36 by armaunito        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Cat::Cat() {
 
     std::cout << "Default Cat constructor has been called" << std::endl;
+    _type = "Cat";
 }
 
 Cat::~Cat() {
@@ -25,6 +26,7 @@ Cat::~Cat() {
 Cat::Cat(const Cat &CatCopy) : Animal(CatCopy) {
 
     std::cout << "Cat copy assignator has been called" << std::endl;
+    _type = "Cat";
 }
 
 Cat &Cat::operator=(const Cat &CatCopy) {

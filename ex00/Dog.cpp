@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 13:59:02 by armosnie          #+#    #+#             */
-/*   Updated: 2025/12/18 14:15:05 by armosnie         ###   ########.fr       */
+/*   Updated: 2025/12/22 17:05:59 by armaunito        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Dog::Dog() {
 
     std::cout << "Default Dog constructor has been called" << std::endl;
+    _type = "Dog";
 }
 
 Dog::~Dog() {
@@ -25,6 +26,7 @@ Dog::~Dog() {
 Dog::Dog(const Dog &DogCopy) : Animal(DogCopy) {
 
     std::cout << "Dog copy assignator has been called" << std::endl;
+    _type = "Dog";
 }
 
 Dog &Dog::operator=(const Dog &DogCopy) {
