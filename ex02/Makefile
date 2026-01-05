@@ -4,7 +4,7 @@ CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes
 
-SRC_FILES := main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
+SRC_FILES := main.cpp 
 OBJ_DIR   := obj
 
 SRC   := $(SRC_FILES)
