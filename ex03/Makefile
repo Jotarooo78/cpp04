@@ -1,12 +1,12 @@
 # ================== CONFIGURATION ================== #
-NAME      := Abstract_class
+NAME      := World_on_fire
 CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes
 
-SRC_FILES := main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
+SRC_FILES := main.cpp 
 OBJ_DIR   := obj
-	
+
 SRC   := $(SRC_FILES)
 OBJS  := $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.cpp=.o))
 

@@ -3,37 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
+/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/05 16:43:14 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/05 17:10:18 by armaunito        ###   ########.fr       */
+/*   Created: 2025/12/18 11:37:48 by armosnie          #+#    #+#             */
+/*   Updated: 2026/01/13 14:16:36 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AMateria.hpp"
-#include "ICharacter.hpp"
+#include "Cat.hpp"
+#include "Dog.hpp"
 
-int main()
-{
-    IMateriaSource* src = new MateriaSource();
-    src->learnMateria(new Ice());
-    src->learnMateria(new Cure());
+
+int main() {
     
-    ICharacter* me = new Character("me");
+    Dog* scooby = new Dog();
+    Cat* zouzou = new Cat();
+
+    scooby->makeSound();
+    zouzou->makeSound();
+
+    scooby->getBrain()->setIdea(0, "scooby : OU SONT MES SCOOBY SNAKCS");
+    zouzou->getBrain()->setIdea(0, "zouzou : lache ca mon gars");
+    scooby->getBrain()->setIdea(1, "scooby : ah, ils etaient la...");
+    zouzou->getBrain()->setIdea(1, "zouzou : trop bete lahuiss");
+
+    std::cout << scooby->getBrain()->getIdea(0) << std::endl;
+    std::cout << zouzou->getBrain()->getIdea(0) << std::endl;
+    std::cout << scooby->getBrain()->getIdea(1) << std::endl;
+    std::cout << zouzou->getBrain()->getIdea(1) << std::endl;
     
-    AMateria* tmp;
-    tmp = src->createMateria("ice");
-    me->equip(tmp);
-    tmp = src->createMateria("cure");
-    me->equip(tmp);
-    
-    ICharacter* bob = new Character("bob");
-    me->use(0, *bob);
-    me->use(1, *bob);
-    
-    delete bob;
-    delete me;
-    delete src;
-    
+    delete scooby;
+    delete zouzou;
+
     return 0;
 }
