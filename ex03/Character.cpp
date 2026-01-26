@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:18:44 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/21 18:02:32 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 14:51:40 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,13 @@ Character::Character() : _name("default") {
     }
 }
 
-Character::~Character() {}
+Character::~Character() {
+
+    for (int i = 0; i < 4; i++) {
+        if (_inventory[i] != NULL)
+            delete _inventory[i];
+    }
+}
 
 Character::Character(const Character &copy) {
 
@@ -34,21 +40,25 @@ Character::Character(const Character &copy) {
 
 Character & Character::operator=(const Character &copy) {
     
-    _name = copy._name;
-
-    for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != NULL) {
-            delete _inventory[i];
-            _inventory[i] = NULL;
+    if (this != &copy)
+    {
+            _name = copy._name;
+        
+        for (int i = 0; i < 4; i++) {
+            if (_inventory[i] != NULL) {
+                delete _inventory[i];
+                _inventory[i] = NULL;
+            }
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            if (copy._inventory[i] != NULL)
+                _inventory[i] = copy._inventory[i]->clone();
+            else
+                _inventory[i] = NULL;
         }
     }
-    
-    for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != NULL)
-            _inventory[i] = copy._inventory[i]->clone();
-        else
-            _inventory[i] = NULL;
-    }
+    return *this;       
 }
 
 Character::Character(std::string const &name) : _name(name) {

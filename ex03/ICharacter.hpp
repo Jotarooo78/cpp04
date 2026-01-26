@@ -4,7 +4,9 @@
 #include <iostream>
 #include "AMateria.hpp"
 
-class ICharacter : public AMateria
+class AMateria;
+
+class ICharacter
 {
    public:
 

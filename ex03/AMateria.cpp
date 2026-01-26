@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:47:09 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/21 15:09:12 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 14:09:14 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ AMateria & AMateria::operator=(const AMateria &copy) {
       if (this != &copy) {
       _type = copy._type;
    }
+   return *this;
 }
 
 std::string const & AMateria::getType() const {

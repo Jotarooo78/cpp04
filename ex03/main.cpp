@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
+/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 16:43:14 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/05 17:10:18 by armaunito        ###   ########.fr       */
+/*   Updated: 2026/01/26 14:57:08 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
-#include "ICharacter.hpp"
+#include "Character.hpp"
+#include "MateriaSource.hpp"
 
 int main()
 {

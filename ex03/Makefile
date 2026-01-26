@@ -4,9 +4,7 @@ CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes
 
-SRC_FILES := main.cpp 
-OBJ_DIR   := obj
-
+SRC_FILES := main.cpp AMateria.cpp Character.cpp Ice.cpp Cure.cpp MateriaSource.cpp
 SRC   := $(SRC_FILES)
 OBJS  := $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.cpp=.o))
 

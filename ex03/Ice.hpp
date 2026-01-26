@@ -4,10 +4,9 @@
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
-class Ice : public AMateria {
+class Ice {
 
     private :
-
 
     public :
         Ice();
