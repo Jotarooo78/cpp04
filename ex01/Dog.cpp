@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
+/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 13:59:02 by armosnie          #+#    #+#             */
-/*   Updated: 2025/12/22 17:12:31 by armaunito        ###   ########.fr       */
+/*   Updated: 2026/01/13 13:52:19 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog() {
+Dog::Dog() : Animal() {
 
     std::cout << "Default Dog constructor has been called" << std::endl;
     _type = "Dog";
