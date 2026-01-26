@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:25:12 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/26 14:52:00 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 17:23:18 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,9 @@ MateriaSource::~MateriaSource() {
 MateriaSource::MateriaSource(const MateriaSource &copy) {
 
     for (int i = 0; i < 4; i++) {
-    if (_materias[i] != NULL)
-        _materias[i] = copy._materias[i]->clone();
-    else
         _materias[i] = NULL;
+        if (copy._materias[i] != NULL)
+            _materias[i] = copy._materias[i]->clone();
     }
 }
 
@@ -61,7 +60,8 @@ void MateriaSource::learnMateria(AMateria *m) {
         return ;
     for (int i = 0; i < 4; i++) {
         if (_materias[i] == NULL) {
-            _materias[i] = _materias[i]->clone();
+            _materias[i] = m->clone();
+            delete m;
             return ;
         }
     }

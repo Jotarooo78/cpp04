@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:47:09 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/26 14:09:14 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:22:35 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,7 @@ std::string const & AMateria::getType() const {
    return _type;
 }
 
-void AMateria::use(ICharacter& target) {}
+void AMateria::use(ICharacter &target) {
+
+   (void)target;
+}

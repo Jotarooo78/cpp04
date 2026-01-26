@@ -6,14 +6,14 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:28:04 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/26 15:01:04 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:45:04 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
 #include "AMateria.hpp"
 
-Ice::Ice() : AMateria("Ice") {}
+Ice::Ice() : AMateria("ice") {}
 
 Ice::~Ice() {}
 
@@ -32,7 +32,7 @@ Ice & Ice::operator=(const Ice &copy) {
 
 void Ice::use(ICharacter &target) {
 
-    std::cout << "*Shoots an ice bolt at " << target.getName() << " *" << std::endl;
+    std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
 
 AMateria *Ice::clone() const {

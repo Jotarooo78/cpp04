@@ -1,10 +1,11 @@
 # ================== CONFIGURATION ================== #
-NAME      := World_on_fire
+NAME      := hell
 CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes
 
 SRC_FILES := main.cpp AMateria.cpp Character.cpp Ice.cpp Cure.cpp MateriaSource.cpp
+OBJ_DIR   := obj
 SRC   := $(SRC_FILES)
 OBJS  := $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.cpp=.o))
 

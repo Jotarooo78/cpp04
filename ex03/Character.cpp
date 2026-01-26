@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:18:44 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/26 14:51:40 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 17:11:50 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,9 @@ Character::Character(const Character &copy) {
 
     _name = copy._name;
     for (int i = 0; i < 4; i++) {
-        if (_inventory[i] != NULL)
+        _inventory[i] = NULL;
+        if (copy._inventory[i] != NULL)
             _inventory[i] = copy._inventory[i]->clone();
-        else
-            _inventory[i] = NULL;
     }
 }
 
