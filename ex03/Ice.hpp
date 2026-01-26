@@ -4,7 +4,7 @@
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
-class Ice {
+class Ice : public AMateria {
 
     private :
 
