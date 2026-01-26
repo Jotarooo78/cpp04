@@ -6,13 +6,15 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 16:43:14 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/26 14:57:08 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/01/26 14:59:13 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "Character.hpp"
 #include "MateriaSource.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
 
 int main()
 {
