@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
+/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:47:09 by armaunito         #+#    #+#             */
-/*   Updated: 2026/01/05 18:09:00 by armaunito        ###   ########.fr       */
+/*   Updated: 2026/01/21 15:09:12 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
+
+AMateria::AMateria() {}
 
 AMateria::AMateria(std::string const &type) {
    

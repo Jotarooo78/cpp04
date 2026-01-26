@@ -4,7 +4,7 @@
 #include <iostream>
 #include "ICharacter.hpp"
 
-class IMateriaSource
+class IMateriaSource : public AMateria
 {
    public:
       IMateriaSource();
