@@ -1,5 +1,5 @@
 # ================== CONFIGURATION ================== #
-NAME      := World_on_fire
+NAME      := Polymorphism_1
 CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes

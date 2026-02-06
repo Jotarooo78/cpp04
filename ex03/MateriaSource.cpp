@@ -6,7 +6,7 @@
 /*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 15:25:12 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/26 17:41:53 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/02/06 18:12:10 by armosnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,11 @@ MateriaSource & MateriaSource::operator=(const MateriaSource &copy) {
 void MateriaSource::learnMateria(AMateria *m) {
     
     if (m == NULL)
-        return ;
+        return;
     for (int i = 0; i < 4; i++) {
         if (_materias[i] == NULL) {
-            _materias[i] = m->clone();
-            delete m;
-            return ;
+            _materias[i] = m;
+            return;
         }
     }
     delete m;

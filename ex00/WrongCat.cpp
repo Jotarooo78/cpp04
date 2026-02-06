@@ -15,6 +15,7 @@
 WrongCat::WrongCat() {
 
     std::cout << "Default WrongCat constructor has been called" << std::endl;
+    _type = "WrongCat";
 }
 
 WrongCat::~WrongCat() {

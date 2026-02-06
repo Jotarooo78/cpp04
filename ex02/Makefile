@@ -1,5 +1,5 @@
 # ================== CONFIGURATION ================== #
-NAME      := Abstract_class
+NAME      := Polymorphism_3
 CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes

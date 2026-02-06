@@ -1,5 +1,5 @@
 # ================== CONFIGURATION ================== #
-NAME      := hell
+NAME      := Polymorphism_4
 CC        := c++
 CFLAGS    := -Wall -Wextra -Werror -g -std=c++98
 OPTIONS   := -I includes
