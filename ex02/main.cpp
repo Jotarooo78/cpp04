@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 11:37:48 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/13 14:16:36 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/02/08 15:36:13 by armaunito        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ int main() {
     
     Dog* scooby = new Dog();
     Cat* zouzou = new Cat();
+    /*
+    Animal* meta = new Animal();
+    */
 
     scooby->makeSound();
     zouzou->makeSound();

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: armosnie <armosnie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: armaunito <armaunito@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:36:47 by armosnie          #+#    #+#             */
-/*   Updated: 2026/01/26 15:44:47 by armosnie         ###   ########.fr       */
+/*   Updated: 2026/02/08 15:45:20 by armaunito        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,14 @@ Cure::Cure() : AMateria("cure") {}
 
 Cure::~Cure() {}
 
-Cure::Cure(const Cure &copy) {
+Cure::Cure(const Cure &copy) : AMateria("cure") {
     
-    if (this != &copy) {
-        this->_type = copy._type;
-    }
+    (void)copy;
 }
 
 Cure & Cure::operator=(const Cure &copy) {
 
-    if (this != &copy)
-        this->_type = copy._type;
+    (void)copy;
     return *this;
 }
 
